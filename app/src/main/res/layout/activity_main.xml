@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mymirror.activity.MainActivity">
+
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.example.mymirror.view.PictureView
+    android:id="@+id/picture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    />
+<com.example.mymirror.view.FunctionView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/function"
+
+   />
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <ImageView
+        android:id="@+id/minus"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:src="@mipmap/downsmall"
+        android:scaleType="centerInside"
+        />
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="@dimen/dp_10"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:progress="0"
+        android:thumbOffset="@dimen/dp_0"
+        />
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_45"
+            android:layout_marginRight="@dimen/dp_30"
+            android:src="@mipmap/uplarge"
+            android:scaleType="centerInside"
+            />
+    </LinearLayout>
+
+    <com.example.mymirror.view.DrawView
+        android:layout_width="match_parent"
+        android:id="@+id/draw_glasses"
+        android:visibility="gone"
+        android:layout_height="match_parent" />
+</RelativeLayout>

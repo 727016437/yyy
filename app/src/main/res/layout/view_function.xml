@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_30">
+    <ImageView
+        android:layout_width="@dimen/dp_45"
+
+        android:layout_height="@dimen/dp_45"
+        android:id="@+id/hint"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@mipmap/hint"
+        />
+    <ImageView
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"
+        android:id="@+id/choose"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@mipmap/choose"
+        android:layout_alignParentRight="true"
+        />
+    <ImageView
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"
+        android:id="@+id/censer"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/light"
+        />
+    <ImageView
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"
+        android:id="@+id/light_down"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/censer"
+        android:scaleType="centerInside"
+        android:src="@mipmap/downlight"
+        />
+    <ImageView
+    android:layout_width="@dimen/dp_45"
+    android:layout_height="@dimen/dp_45"
+    android:id="@+id/light_up"
+    android:layout_centerVertical="true"
+    android:layout_toRightOf="@+id/censer"
+    android:scaleType="centerInside"
+    android:src="@mipmap/downlight"
+        android:layout_marginLeft="@dimen/dp_20"
+    />
+</RelativeLayout>
+</LinearLayout>
