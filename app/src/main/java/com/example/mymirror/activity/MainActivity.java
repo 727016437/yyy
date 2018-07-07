@@ -163,7 +163,7 @@ private void setCamera(){
         everyFcous=1;
         nowFcous=minFcous;
         seekBar.setMax(maxFocus);
-        Log.e(TAG,"当前镜头距离："+ minFcous+"获取最大距离为"+maxFocus);
+        Log.e(TAG,"当前镜头距离是多少呢："+ minFcous+"获取最大距离为"+maxFocus);
         camera.setParameters(parameters);
     }
 }
