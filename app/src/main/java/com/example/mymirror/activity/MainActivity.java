@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements SurfaceHolder.Cal
                     mCamera = Camera.open(camIdx);
                     mCurrentCamIndex = camIdx;
                 } catch (Exception e) {
-                    Log.e(TAG, "相机打开失败：" + e.getLocalizedMessage());
+                    Log.e(TAG, "相机失败：" + e.getLocalizedMessage());
 
                 }
             }
